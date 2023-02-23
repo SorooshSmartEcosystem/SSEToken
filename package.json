@@ -1,0 +1,32 @@
+{
+  "name": "ssetoken",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "soroosh.app",
+  "license": "ISC",
+  "homepage": "www.soroosh.app",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.1.6",
+    "solium": "^1.2.5"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.16",
+    "chai": "^4.3.4",
+    "ethereumjs-abi": "^0.6.8",
+    "ethereumjs-util": "^6.2.0",
+    "ethereumjs-wallet": "^1.0.2",
+    "web3": "^1.6.0"
+  }
+}
