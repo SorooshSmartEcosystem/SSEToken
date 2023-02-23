@@ -14,7 +14,7 @@ contract SSEToken is VotingToken, Ownable, Pausable {
     using SafeMath for uint256;
     mapping(address => uint256) private frosted;
 
-    address[] public whiteList;
+    address[] public whiteListWallets;
     
     event Frost(address indexed from, address indexed to, uint256 value);
     
@@ -25,8 +25,8 @@ contract SSEToken is VotingToken, Ownable, Pausable {
     /// @dev Adds new address to whitelist.
 
    function addWhiteListWallet(address newAddress) public onlyOwner {
-        if(!isWhiteList(newAddress)){
-            whiteList.push(newAddress);
+        if(!isWhiteListWallet(newAddress)){
+            whiteListWallets.push(newAddress);
         }
    }
 
@@ -34,12 +34,12 @@ contract SSEToken is VotingToken, Ownable, Pausable {
     /// @param index_ index of the wallet.
 
    function removeWhiteListWalletByIndex(uint index_) public onlyOwner {
-        require(index_ < whiteList.length, "index out of bound");
-        while (index_ < whiteList.length - 1) {
-            whiteList[index_] = whiteList[index_ + 1];
+        require(index_ < whiteListWallets.length, "index out of bound");
+        while (index_ < whiteListWallets.length - 1) {
+            whiteListWallets[index_] = whiteListWallets[index_ + 1];
             index_++;
         }
-        whiteList.pop();
+        whiteListWallets.pop();
     }
 
     /// @dev finds the index of the address in whiteList
@@ -47,7 +47,7 @@ contract SSEToken is VotingToken, Ownable, Pausable {
     
     function findWhiteListIndex(address address_) private view returns(uint) {
         uint i = 0;
-        while (whiteList[i] != address_) {
+        while (whiteListWallets[i] != address_) {
             i++;
         }
         return i;
@@ -64,21 +64,21 @@ contract SSEToken is VotingToken, Ownable, Pausable {
     /// @dev Returns list of whiteList.
     /// @return List of whiteList addresses.
 
-    function getWhiteList() public view returns (address[] memory) {
-        return whiteList;
+    function getWhiteListWallets() public view returns (address[] memory) {
+        return whiteListWallets;
     }
     
     /// @dev Checks if address is in whitelist.
     /// @param address_ address of the wallet.
     /// @return true if address is in white list.
     
-    function isWhiteList(address address_) public view returns (bool) {
-    if(whiteList.length == 0) {
+    function isWhiteListWallet(address address_) public view returns (bool) {
+    if(whiteListWallets.length == 0) {
         return false;
     }
 
-    for (uint i = 0; i < whiteList.length; i++) {
-        if (whiteList[i] == address_) {
+    for (uint i = 0; i < whiteListWallets.length; i++) {
+        if (whiteListWallets[i] == address_) {
             return true;
         }
     }
@@ -113,7 +113,7 @@ contract SSEToken is VotingToken, Ownable, Pausable {
         uint256 amount
     ) internal override {
         super._beforeTokenTransfer(from, to, amount);
-        require(!paused() || isWhiteList(from) , "BEP20Pausable: token transfer while paused");
+        require(!paused() || isWhiteListWallet(from) , "BEP20Pausable: token transfer while paused");
         require(_balances[from].sub(frosted[from]) >= amount, "SSE: not avaiable balance");
     }
 
