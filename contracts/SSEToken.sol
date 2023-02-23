@@ -24,7 +24,7 @@ contract SSEToken is VotingToken, Ownable, Pausable {
 
     /// @dev Adds new address to whitelist.
 
-   function addWhiteList(address newAddress) public onlyOwner {
+   function addWhiteListWallet(address newAddress) public onlyOwner {
         if(!isWhiteList(newAddress)){
             whiteList.push(newAddress);
         }
@@ -33,7 +33,7 @@ contract SSEToken is VotingToken, Ownable, Pausable {
     /// @dev removes whitelist wallet by index.
     /// @param index_ index of the wallet.
 
-   function removeWhiteListByIndex(uint index_) public onlyOwner {
+   function removeWhiteListWalletByIndex(uint index_) public onlyOwner {
         require(index_ < whiteList.length, "index out of bound");
         while (index_ < whiteList.length - 1) {
             whiteList[index_] = whiteList[index_ + 1];
@@ -56,9 +56,9 @@ contract SSEToken is VotingToken, Ownable, Pausable {
     /// @dev removes whitelist wallet by address
     /// @param address_ address of the wallet.
 
-    function removeAllowedWalletByAddress(address address_) public onlyOwner {
+    function removeWhiteListWalletByAddress(address address_) public onlyOwner {
         uint index = findWhiteListIndex(address_);
-        removeWhiteListByIndex(index);
+        removeWhiteListWalletByIndex(index);
     }
 
     /// @dev Returns list of whiteList.
