@@ -1,5 +1,21 @@
 # SSEToken
 
+What is SSE?
+
+SSE stands for Soroosh Smart Ecosystem, a comprehensive blockchain-based platform developed by the Soroosh team and led by CEO and founder, Mr. Soroush Osivand. With over a decade of experience in the blockchain and cryptocurrency industry, Mr. Osivand has been a driving force behind the development of the SSE platform and its various products and services.
+
+
+The SSE platform is designed to provide users with easy access to a wide range of decentralized products and services, including educational resources, trading tools, advertising services, and more. At the heart of the SSE platform is Soroosh's AI Engine, which powers all of the platform's services and products. The platform leverages artificial intelligence and Web3 technology to provide users with cutting-edge solutions that help them navigate the complexities of the blockchain and Web3 space.
+
+
+SSE tokens are the native tokens of the SSE platform and will be used to access and utilize the platform's products and services. The max supply of SSE tokens is set at 6 billion tokens, with no further tokens to be created after that point. As the Soroosh team, under the leadership of CEO Soroush Osivand, continues to develop and expand the SSE platform, it is expected that the demand for SSE tokens will increase, potentially leading to increased value for investors.
+
+
+Through Mr. Osivand's leadership, the Soroosh team has established itself as a leading force in the industry, developing innovative solutions that address the needs of investors, traders, creators, and advertisers in the blockchain and Web3 space. As the team continues to expand its product offerings and services, the SSE platform is expected to continue to grow and evolve, providing users with even more opportunities to participate in the blockchain and Web3 revolution.
+
+
+
+
 The Soroosh team has developed an extensive suite of smart products and services
 that cater to the needs of investors, traders, creators, and advertisers in the blockchain and
 web3 space.
