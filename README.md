@@ -1,5 +1,6 @@
 # SSEToken
 
+
 What is SSE?
 
 SSE stands for Soroosh Smart Ecosystem, a comprehensive blockchain-based platform developed by the Soroosh team and led by CEO and founder, Mr. Soroush Osivand. With over a decade of experience in the blockchain and cryptocurrency industry, Mr. Osivand has been a driving force behind the development of the SSE platform and its various products and services.
@@ -65,5 +66,11 @@ By offering a diverse range of innovative products and services, the Soroosh tea
 committed to providing users with cutting-edge tools that help them navigate the
 complexities of the blockchain and web3 space.
 
-for more information visit www.soroosh.app
+Smart Contract:
+<code>
+0x02269c6f076614d4d6A68B9508F72A56809F1b22
+</code>
+
+
+for more information visit <a href="https://.soroosh.app">Soroosh App </a>
 
