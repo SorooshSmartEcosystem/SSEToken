@@ -67,7 +67,7 @@ committed to providing users with cutting-edge tools that help them navigate the
 complexities of the blockchain and web3 space.
 
 Smart Contract:
-<code>0x02269c6f076614d4d6A68B9508F72A56809F1b22</code>
+<code>0x6A1225c87F15Da91e2fA5ee7b2075E2e3a9dBc39</code>
 
 
 for more information visit <a href="https://soroosh.app">Soroosh App </a>
